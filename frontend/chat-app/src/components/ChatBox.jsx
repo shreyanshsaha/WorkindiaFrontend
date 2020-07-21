@@ -51,9 +51,10 @@ export default class ChatBox extends Component {
     }
   }
   componentDidUpdate() {
+    console.log("POS")
     console.log(position);
     var element = document.getElementsByClassName("chat-message-area")[0];
-    element.scrollTop = 2*position;
+    element.scrollTop = 5*position;
 
   
     // console.log(this.state);
